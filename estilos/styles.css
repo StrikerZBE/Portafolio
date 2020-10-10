@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+}
+ /* GLOBALES */
+.container {
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 60px 0
+}
+
+/* MAIN */
+
+.titulo {
+    font-size: 3rem;
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.descripcion {
+    width: 760px;
+    color: #444;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+}
+
+.subtitulo {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #9598de;
+    margin-bottom: 1rem;
+}
+
+.muestra {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.prevista {
+    background: #9c9c9c;
+    width: 120px;
+    height: 120px;
+    margin-right: 18px;
+}
+.detalles {
+    flex-direction: column;
+}
+.detalles h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.detalles p {
+    color: #444;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.6rem;
+}
+
+.enlace {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.enlace p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 5px;
+    color: #9598de;
+}
+.enlace img {
+    padding-bottom: 5px;
+}
+
+.enlace img:hover {
+    color: #888be0;
+}
+
+/* FOOTER */
+
+.separador {
+    border-top: 1px solid #9c9c9c;
+    height: 4px;
+    max-width: 100vw;
+    margin-top: 8rem;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.correo {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #9598de;
+}
+
+.social img{
+    margin-left: 10px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 850px) {
+    .descripcion {
+        width: 80vw;
+    }
+    .prevista {
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .titulo {
+        font-size: 2.8rem;
+    }
+
+    .prevista {
+        min-width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+    }
+
+    .muestra {
+        display: block;
+    }
+
+    .subtitulo {
+        font-size: 1.8rem;
+    }
+
+    .prevista {
+        height: 150px;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .detalles {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .detalles h3 {
+        font-size: 1.5rem;
+    }
+
+    .detalles p, a{
+        font-size: 1rem;
+    }
+
+    .enlace {
+        margin-left: 150px;
+    }
+}
